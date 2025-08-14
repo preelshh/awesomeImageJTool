@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.morphotool'
+version = '0.1.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8) // or 17 if you upgrade later
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'net.imagej:ij:1.54f'       // classic ImageJ
+    testImplementation 'junit:junit:4.13.2'
+}
+
+application {
+    // CHANGE THIS if GuiLauncher.java has a package line:
+    // If it says "package User;" then:
+    // mainClass = 'User.GuiLauncher'
+    // If no package:
+    mainClass = 'GuiLauncher'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
