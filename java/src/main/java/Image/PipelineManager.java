@@ -16,12 +16,12 @@ public class PipelineManager {
 
 
        System.out.println("[Pipeline] start cropping"); System.out.flush();
-    //   ImagePlus croppedImg = SolidImageCropper.RectangleCrop(img);
+       ImagePlus croppedImg = SolidImageCropper.RectangleCrop(img);
        System.out.println("[Pipeline] cropped"); System.out.flush();
 
 
         System.out.println("[Pipeline] running watershed"); System.out.flush();
-        ImagePlus binaryImg = ImageBinaryWatershed.runAll(img);
+        ImagePlus binaryImg = ImageBinaryWatershed.runAll(croppedImg);
 
         String imageName = new File(imagePath).getName();
         String imageBaseName = imageName.replaceFirst("[.][^.]+$", "");
