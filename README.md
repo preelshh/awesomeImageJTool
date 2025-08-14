@@ -39,7 +39,7 @@ run.bat
 
 # macOS/Linux
 ./run.sh
-
+```
 ---
 ## File Outputs
 
@@ -53,3 +53,4 @@ Final CSV: from Python (ML classification results)
 1. Fixing the watershed algorithm in main/java/src/main/java/Image/ImageBinaryWatershed.java within the function watershed
 2. Cropping algorithim in main/java/src/main/java/Image/SolidImageCropper.java
 3. Pixel to Centimeter Calibration in main/java/src/main/java/Analysis/RegionAnalyzer.java at lines 53-55
+
