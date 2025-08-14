@@ -1,0 +1,5 @@
+C:/Users/priya/IdeaProjects/ima722/DispwithClumps.JPG_features.csv
+C:/Users/priya/IdeaProjects/ima722/Pellets.JPG_features.csv
+C:/Users/priya/IdeaProjects/ima722/QuiteClumpy.JPG_features.csv
+C:/Users/priya/IdeaProjects/ima722/QuiteClumpyAgain.JPG_features.csv
+C:/Users/priya/IdeaProjects/ima722/SuperDisp.JPG_features.csv
