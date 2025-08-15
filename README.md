@@ -11,12 +11,17 @@ This repository is structured for **portability** so that any future user can cl
 ---
 **Steps to Run**
 
+**WARNING**
+Your computer needs the following languages downloaded: Python, Java
+Also, you need the following python libraries. Please install the libraries after you have installed python with this line of code: **python -m pip install pandas numpy scikit-learn joblib**
+
+
 1. Unzip the provided ZIP file into a folder on your computer.
    
 2. Open the folder so you can see all its contents.
 
 3. On Windows: Double-click run.bat
-
+   
    On Mac: Open Terminal, navigate to the folder, and run ./run.sh
    1. Open Terminal (you can find it via Spotlight Search by pressing Cmd + Space and typing "Terminal").
    2. Navigate to the folder where you unzipped the tool:
@@ -76,5 +81,6 @@ Final CSV: from Python (ML classification results)
 1. Fixing the watershed algorithm in main/java/src/main/java/Image/ImageBinaryWatershed.java within the function watershed
 2. Cropping algorithim in main/java/src/main/java/Image/SolidImageCropper.java
 3. Pixel to Centimeter Calibration in main/java/src/main/java/Analysis/RegionAnalyzer.java at lines 53-55
+
 
 
