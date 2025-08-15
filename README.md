@@ -9,7 +9,30 @@ It combines:
 This repository is structured for **portability** so that any future user can clone, set up, and run the pipeline with minimal effort.
 
 ---
+**Steps to Run**
 
+1. Unzip the provided ZIP file into a folder on your computer.
+   
+2. Open the folder so you can see all its contents.
+
+3. On Windows: Double-click run.bat
+
+   On Mac: Open Terminal, navigate to the folder, and run ./run.sh
+   1. Open Terminal (you can find it via Spotlight Search by pressing Cmd + Space and typing "Terminal").
+   2. Navigate to the folder where you unzipped the tool:
+   3. If the folder is in your Downloads: cd ~/Downloads/MorphoTool
+        _If it’s somewhere else, you can drag the folder into the Terminal window after typing cd (with a space). This will auto-fill the path. Example:_
+        cd /Users/yourusername/Documents/MorphoTool
+   4. Make the script executable (only needs to be done once):chmod +x run.sh
+   5. Run the script: ./run.sh
+
+5. When prompted, choose Yes or No if you want to view the preprocessed ImageJ images on your computer.
+
+6. Select the directory containing the images you want the tool to preprocess.
+
+7. Choose where you want the output .csv file to be saved.
+
+8. When finished, close all open windows.
 
 ---
 
@@ -53,4 +76,5 @@ Final CSV: from Python (ML classification results)
 1. Fixing the watershed algorithm in main/java/src/main/java/Image/ImageBinaryWatershed.java within the function watershed
 2. Cropping algorithim in main/java/src/main/java/Image/SolidImageCropper.java
 3. Pixel to Centimeter Calibration in main/java/src/main/java/Analysis/RegionAnalyzer.java at lines 53-55
+
 
