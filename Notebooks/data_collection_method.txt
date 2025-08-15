@@ -1,0 +1,11 @@
+1. Go to ImageJ GUI on your computer
+2. Repeat the steps you see in PipelineManager which should be
+	i. Binarize the image
+	ii. Enhance contrast and apply auto-threshold (Li) to the image
+	iii. Watershed (Make sure image is binary) 
+	iv. Potentially despeckle, open, erode etc. 
+3. Go to MorphoLibJ Plugin and select ConnectedComponentsLabeling
+4. Go to MorphoLibJ Plugin and select Analyze Regions (make sure number of particle is overlayed on the resulting Analyze Regions generated image)
+5. Save the Results.csv file on your computer
+6. (Super Fun Exciting Portion): Hand label (probably not every but as many as you can). You can do this by recording the index of each particle you see into a list of indices PER class. (Please look at Notebooks/DataParsing724 to e  exactly this process is done)
+7. Create a dataframe for each class (dfA,dfB,...). Make sure there exists a column 'particle_type' as this is our output variable  
